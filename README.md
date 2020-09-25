@@ -10,6 +10,11 @@
 >
 > **NOTE**: With new source from [QQMusic](http://y.qq.com) added, the source API is get from ite [webpage](http://y.qq.com), **all right revserved by [QQMusic](http://y.qq.com)**. This was **only for study**.
 
+#### Update: 2020-09-25
+
+1. Fix High level python3 bug.
+
+
 #### Update: 2019-06-6
 
 1. Fix code.
