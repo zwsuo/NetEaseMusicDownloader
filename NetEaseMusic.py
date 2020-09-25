@@ -108,8 +108,8 @@ def AES_encrypt(text, key):
     iv = '0102030405060708'
     pad = 16 - len(text) % 16
     text = text + pad * chr(pad)
-    encryptor = AES.new(key, AES.MODE_CBC, iv)
-    encrypt_text = encryptor.encrypt(text)
+    encryptor = AES.new(key.encode("utf-8"), AES.MODE_CBC, iv.encode("utf-8"))
+    encrypt_text = encryptor.encrypt(text.encode("utf-8"))
     encrypt_text = base64.b64encode(encrypt_text)
     encrypt_text = str(encrypt_text, encoding='utf-8')
     return encrypt_text
